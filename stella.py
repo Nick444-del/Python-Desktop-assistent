@@ -79,3 +79,26 @@ if __name__ == '__main__':
             print(songs)
             os.startfile(os.path.join(music_dir, songs[0]))
 
+        elif 'the time' in query:
+            strtime = datetime.datetime.now().strftime("%H:%M:%S")
+            speak(f"The time is {strtime}")
+        
+        elif 'open code' in query:
+            codePath = "C:\\Users\\Nikhil Gorule\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+            os.startfile(codePath)
+
+        elif 'open excel' in query:
+            excelPath = "C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE"
+            os.startfile(excelPath)
+
+        elif 'open notion' in query:
+            notionPath = "C:\\Users\\Nikhil Gorule\\AppData\\Local\\Programs\\Notion\\Notion.exe"
+            os.startfile(notionPath)
+
+        elif 'open whatsapp' in query:
+            whatsappPath = "C:\\Users\\Nikhil Gorule\\AppData\\Local\\WhatsApp\\WhatsApp.exe"
+            os.startfile(whatsappPath)
+
+        elif 'open telegram' in query:
+            telegramPath = "C:\\Users\\Nikhil Gorule\\AppData\\Roaming\\Telegram Desktop\\Telegram.exe"
+            os.startfile(telegramPath)
